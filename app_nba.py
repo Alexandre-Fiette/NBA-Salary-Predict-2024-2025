@@ -248,4 +248,16 @@ with tab_oracle:
             st.warning(f"📉 **Rabais :** {p_oracle} a signé pour {abs(ecart)/1e6:.1f}M$ de MOINS que l'estimation IA.")
 
 
-""" & "C:\Program Files\Python313\python.exe" -m streamlit run app_nba.py """
+# ==========================================
+# FOOTER
+# ==========================================
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; color: #808080; padding-top: 10px; padding-bottom: 20px;'>
+        <p>Conçu & Développé par <b>Alexandre Fiette</b></p>
+        <p style='font-size: 0.8em;'>© 2025 - Tous droits réservés | Données issues de Basketball Reference & NBA Stats</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
